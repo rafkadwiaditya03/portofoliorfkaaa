@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Siswa RPL SMKN 1 Lumajang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- CANVAS BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor">
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="cursor-dot"  id="cursor-dot"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><span>~/</span>rpl.smkn1lumajang</div>
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Keahlian</a></li>
+    <li><a href="#projects">Proyek</a></li>
+    <li><a href="#experience">Riwayat</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hubungi Saya</a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-status">
+    <div class="status-dot"></div>
+    Tersedia untuk Magang
+  </div>
+  <p class="hero-tag">Siswa RPL · SMKN 1 Lumajang · 2025</p>
+  <h1 class="hero-name">
+    <span class="line">Nama</span>
+    <span class="line highlight">Kamu</span>
+    <span class="line">Disini.</span>
+  </h1>
+  <p class="hero-sub">
+    Siswa <strong>Rekayasa Perangkat Lunak</strong> yang antusias membangun solusi
+    digital — dari desain UI hingga backend, siap memberikan kontribusi nyata
+    melalui program magang.
+  </p>
+  <div class="hero-actions">
+    <a href="#projects" class="btn-primary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="5 12 12 5 19 12"/><line x1="12" y1="5" x2="12" y2="19"/>
+      </svg>
+      Lihat Proyek
+    </a>
+    <a href="#contact" class="btn-outline">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/>
+      </svg>
+      Hubungi Saya
+    </a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll untuk eksplorasi
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div>
+    <p class="about-label">// tentang saya</p>
+    <h2 class="about-heading reveal">Passionate<br/>Developer<br/>Muda.</h2>
+    <p class="about-text reveal">
+      Halo! Saya adalah siswa kelas XI Rekayasa Perangkat Lunak di SMKN 1 Lumajang.
+      Sejak pertama kali menyentuh kode, saya jatuh cinta dengan dunia pemrograman
+      dan tidak pernah berhenti belajar.
+    </p>
+    <p class="about-text reveal">
+      Saya mencari kesempatan magang untuk mengaplikasikan ilmu yang dipelajari di
+      sekolah ke dalam lingkungan profesional, belajar dari praktisi berpengalaman,
+      dan berkontribusi pada proyek nyata.
+    </p>
+    <div class="info-grid reveal">
+      <div class="info-item">
+        <div class="info-key">Sekolah</div>
+        <div class="info-val">SMKN 1 Lumajang</div>
+      </div>
+      <div class="info-item">
+        <div class="info-key">Jurusan</div>
+        <div class="info-val">Rekayasa Perangkat Lunak</div>
+      </div>
+      <div class="info-item">
+        <div class="info-key">Kelas</div>
+        <div class="info-val">XI / XII RPL</div>
+      </div>
+      <div class="info-item">
+        <div class="info-key">Status</div>
+        <div class="info-val">🟢 Cari Magang</div>
+      </div>
+      <div class="info-item">
+        <div class="info-key">Lokasi</div>
+        <div class="info-val">Lumajang, Jawa Timur</div>
+      </div>
+      <div class="info-item">
+        <div class="info-key">Email</div>
+        <div class="info-val">nama@email.com</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-right">
+    <div class="stat-card reveal">
+      <div class="stat-icon">🎯</div>
+      <div>
+        <div class="stat-num">3+</div>
+        <div class="stat-desc">Proyek selesai dikerjakan</div>
+      </div>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:.1s">
+      <div class="stat-icon">⏱️</div>
+      <div>
+        <div class="stat-num">2th</div>
+        <div class="stat-desc">Belajar pemrograman</div>
+      </div>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:.2s">
+      <div class="stat-icon">📚</div>
+      <div>
+        <div class="stat-num">5+</div>
+        <div class="stat-desc">Teknologi yang dikuasai</div>
+      </div>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:.3s">
+      <div class="stat-icon">🏆</div>
+      <div>
+        <div class="stat-num">LKS</div>
+        <div class="stat-desc">Pernah ikut kompetisi coding</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Keahlian</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+
+    <div class="skill-card reveal">
+      <div class="skill-cat">Frontend</div>
+      <div class="skill-name">HTML &amp; CSS</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="--w:90%"></div></div>
+      <div class="skill-pct"><span>Mahir</span><span>90%</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">Semantik HTML5</span>
+        <span class="skill-tag">CSS Flexbox</span>
+        <span class="skill-tag">CSS Grid</span>
+        <span class="skill-tag">Responsive</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal" style="transition-delay:.08s">
+      <div class="skill-cat">Frontend</div>
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div>
+      <div class="skill-pct"><span>Menengah</span><span>75%</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">ES6+</span>
+        <span class="skill-tag">DOM</span>
+        <span class="skill-tag">Fetch API</span>
+        <span class="skill-tag">JSON</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal" style="transition-delay:.16s">
+      <div class="skill-cat">Backend</div>
+      <div class="skill-name">PHP &amp; MySQL</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div>
+      <div class="skill-pct"><span>Menengah</span><span>70%</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">PHP Native</span>
+        <span class="skill-tag">Laravel</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">CRUD</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal" style="transition-delay:.24s">
+      <div class="skill-cat">Framework</div>
+      <div class="skill-name">Bootstrap / Tailwind</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div>
+      <div class="skill-pct"><span>Mahir</span><span>80%</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">Bootstrap 5</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">Responsive UI</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal" style="transition-delay:.32s">
+      <div class="skill-cat">Tools</div>
+      <div class="skill-name">Git &amp; Workflow</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="--w:65%"></div></div>
+      <div class="skill-pct"><span>Menengah</span><span>65%</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">XAMPP</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal" style="transition-delay:.4s">
+      <div class="skill-cat">Design</div>
+      <div class="skill-name">UI/UX Design</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="--w:60%"></div></div>
+      <div class="skill-pct"><span>Dasar</span><span>60%</span></div>
+      <div class="skill-tags">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Wireframe</span>
+        <span class="skill-tag">Prototyping</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Proyek</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-img" style="background: linear-gradient(135deg, #0a1628, #0d2137);">
+        <div class="project-img-inner">🏫</div>
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-year">2024 · Web App</div>
+        <div class="project-title">Sistem Informasi Sekolah</div>
+        <div class="project-desc">Aplikasi web untuk manajemen data siswa, nilai, dan absensi. Dilengkapi dashboard admin, laporan PDF, dan antarmuka responsif.</div>
+        <div class="project-stack">
+          <span class="stack-tag">PHP</span>
+          <span class="stack-tag">MySQL</span>
+          <span class="stack-tag">Bootstrap</span>
+          <span class="stack-tag">JS</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="project-link">→ Lihat Detail</a>
+        <a href="#" class="project-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="transition-delay:.1s">
+      <div class="project-img" style="background: linear-gradient(135deg, #0a1a0a, #0d2d0d);">
+        <div class="project-img-inner">🛒</div>
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-year">2024 · E-Commerce</div>
+        <div class="project-title">Toko Online UMKM</div>
+        <div class="project-desc">Platform toko online sederhana untuk UMKM lokal dengan fitur katalog produk, keranjang belanja, dan WhatsApp order integration.</div>
+        <div class="project-stack">
+          <span class="stack-tag">Laravel</span>
+          <span class="stack-tag">MySQL</span>
+          <span class="stack-tag">Tailwind</span>
+          <span class="stack-tag">Alpine.js</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="project-link">→ Lihat Detail</a>
+        <a href="#" class="project-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="transition-delay:.2s">
+      <div class="project-img" style="background: linear-gradient(135deg, #1a0a0a, #2d0d0d);">
+        <div class="project-img-inner">📱</div>
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-year">2023 · Mobile-First</div>
+        <div class="project-title">Aplikasi Absensi QR</div>
+        <div class="project-desc">Sistem absensi berbasis QR Code untuk ekstrakulikuler sekolah. Real-time update dan rekap otomatis ke database.</div>
+        <div class="project-stack">
+          <span class="stack-tag">HTML/CSS</span>
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">PHP</span>
+          <span class="stack-tag">QR.js</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="#" class="project-link">→ Lihat Detail</a>
+        <a href="#" class="project-link">GitHub ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Riwayat &amp; Pendidikan</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2022 – Sekarang</div>
+      <div class="timeline-title">Rekayasa Perangkat Lunak (RPL)</div>
+      <div class="timeline-place">SMKN 1 Lumajang · Lumajang, Jawa Timur</div>
+      <div class="timeline-desc">
+        Mempelajari dasar-dasar pemrograman, pengembangan web, basis data, jaringan dasar,
+        dan rekayasa perangkat lunak. Aktif dalam ekstrakulikuler coding dan mengikuti
+        berbagai kompetisi LKS.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024</div>
+      <div class="timeline-title">Peserta LKS Web Technology</div>
+      <div class="timeline-place">Lomba Kompetensi Siswa Tingkat Kabupaten</div>
+      <div class="timeline-desc">
+        Berpartisipasi dalam Lomba Kompetensi Siswa bidang Web Technology tingkat
+        kabupaten, mengasah kemampuan dalam pengembangan web front-end dan back-end
+        dalam waktu terbatas.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023</div>
+      <div class="timeline-title">Proyek Akhir Kelas X</div>
+      <div class="timeline-place">SMKN 1 Lumajang</div>
+      <div class="timeline-desc">
+        Membuat sistem informasi perpustakaan sederhana sebagai proyek akhir kelas X,
+        dengan fitur peminjaman, pengembalian buku, dan laporan otomatis berbasis
+        PHP &amp; MySQL.
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Target 2025</div>
+      <div class="timeline-title">Program Magang (PKL)</div>
+      <div class="timeline-place">Mencari Perusahaan / Instansi</div>
+      <div class="timeline-desc">
+        Siap melaksanakan Praktik Kerja Lapangan (PKL/Magang) selama 3–6 bulan.
+        Termotivasi untuk belajar di lingkungan profesional dan berkontribusi pada
+        proyek nyata.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <p class="about-label reveal" style="text-align:center">// mari berkolaborasi</p>
+  <h2 class="contact-headline reveal">
+    Let's Work<br/><span class="stroke">Together.</span>
+  </h2>
+  <p class="contact-sub reveal">
+    Saya terbuka untuk kesempatan magang di bidang web development, mobile apps,
+    atau software engineering. Mari diskusikan bagaimana saya bisa berkontribusi!
+  </p>
+  <div class="contact-links reveal">
+    <a href="mailto:nama@email.com" class="contact-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/>
+      </svg>
+      Email Saya
+    </a>
+    <a href="https://wa.me/62xxxxxxxxxx" class="contact-link" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+      WhatsApp
+    </a>
+    <a href="https://github.com/username" class="contact-link" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+      GitHub
+    </a>
+    <a href="https://linkedin.com/in/username" class="contact-link" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+      </svg>
+      LinkedIn
+    </a>
+  </div>
+  <a href="#" class="btn-primary reveal" style="display:inline-flex; margin:0 auto">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </svg>
+    Download CV
+  </a>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div>© 2025 · <span style="color:var(--text)">Nama Kamu</span> · SMKN 1 Lumajang RPL</div>
+  <div>Dibangun dengan ❤️ &amp; banyak <span style="color:var(--accent)">kopi</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
